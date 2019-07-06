@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>寺库用户登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/comm.css" />
+
+</head>
+
+<body>
+    <div class="bgcolor">
+        <div class="login_center clearfix">
+            <div class="login_in fr">
+                <div class="login_ewm">
+                    <ul class="login_ewm_title">
+                        <li class="on">扫码登录</li>
+                        <li>密码登录</li>
+                    </ul>
+                    <div class="login_ewm_cont">
+                        <div id="qrbox">
+                            <div id="qrcode">
+                                <div class="ewmBox ewmBox2" id="loginEwm">
+                                    <img src="https://user-center.secoo.com/service/appapi/qrcode/show?bid=1&size=6&t=1562395137111" class="ewmImg" id='qrimg' />
+
+                                </div>
+                                <p class="textts">打开<a href="http://www.secoo.com/special/sikuApp.shtml" target="_blank">寺库app</a>扫一扫登录</p>
+                            </div>
+
+                            <div id="qrexpire" style="display: none;">
+                                <div class="ewmBox">
+                                    <img src="img/ewm.jpg" width="192" height="192" class="ewmImg" />
+                                    <div class="ewmBox_sx">
+                                        <p>二维码已失效</p>
+                                        <button onclick="qrcodeModule.refresh();">刷新</button>
+                                    </div>
+                                </div>
+                                <p class="textts">打开<a href="http://www.secoo.com/special/sikuApp.shtml" target="_blank">寺库app</a>扫一扫登录</p>
+                            </div>
+
+                            <div id="qrsuccess" style="display: none;">
+                                <div class="scanCodeSuccess">
+                                    <p><img src="img/tb.gif" width="65" height="65" /></p>
+                                    <p class="p1">扫码成功</p>
+                                    <p class="p2">请勿刷新本页面，按手机提示操作</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div style="display: none;">
+                            <div class="error pngfix" style="display:none" id="error_msg">请输入登录密码。</div>
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="login_tips ltips01">
+                                        <label>用户名/手机号/邮箱</label>
+                                        <input class="in_style" id="userName" type="text" tabindex="1" />
+                                        <i class="picUser"></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="login_tips ltips02">
+                                        <label>密码</label>
+                                        <input class="in_style" type="password" id="userPass" tabindex="2" />
+                                        <i class="picPassWord"></i>
+                                    </div>
+                                </li>
+                                <li class="clearfix" id="capcode" style="display: none">
+                                    <div>
+                                        <p>验证码：</p>
+                                        <input id="checkCode" class="in_style width100 fl" type="text" />
+                                        <a class="yz fl marTop_8" href="javascript:void(0)">
+                                            <img id="logImgCode" onclick="login.changeCaptcha('logImgCode', 'login');" style="cursor: pointer;" src="" width="80" height="40" />
+                                        </a>
+                                        <a class="change fl marTop_8" onclick="login.changeCaptcha('logImgCode', 'login');" href="javascript:void(0)">换一换</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="rememberMe"><input type="checkbox" checked="checked" id="rememberUserLoginInfo"/> 记住账号</label>
+                                </li>
+                            </ul>
+                            <style>
+                                .btn_submit {
+                                    padding: 9px 0 8px 0;
+                                    position: relative;
+                                }
+                                
+                                .rememberMe {
+                                    position: relative;
+                                    top: -10px;
+                                    *left: -3px
+                                }
+                            </style>
+                            <div class="btn_submit">
+                                <input id="loginButton" class="input_sub login_btn" name="" type="button" value="立即登录" tabindex="3" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jiathis">
+                    <p>使用合作网站账号登录</p>
+                    <p>
+                        <a style="display: inline-block; width: 50px; height: 25px; cursor: pointer;" onclick="login.qqLogin()">
+                            <img src="https://passport.secoo.com/images/qq.jpg" alt="QQ登录" />
+                            <span style="margin-left: 5px;">QQ</span>
+                        </a>
+                        <a style="display: inline-block; width: 60px; height: 25px; cursor: pointer;" onclick="login.weixinLogin()">
+                            <img src="https://passport.secoo.com/images/WeChat.png" alt="微信登录" style="height: 24px;" />
+                            <span style="margin-left: 5px;">微信</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="msg clearfix">
+
+                    <span class="fl">还不是寺库会员？<a href="registor.html" target="_blank" class="active">免费注册</a></span>
+                    <span class="fr"><a href="/findPassword/" target="_blank">忘记密码？</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

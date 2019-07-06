@@ -1,0 +1,241 @@
+body {
+    background: #fdf8f4 url(https://safeimg.secoo.com/imagesNew/loginPic/login_03.jpg) no-repeat center top;
+}
+
+.bgcolor {
+    padding: 30px 0;
+}
+
+.reg_box {
+    width: 1200px;
+    margin: 0 auto;
+    height: 720px;
+}
+
+.reg_center {
+    width: 310px;
+    padding: 30px 35px;
+    float: right;
+    background-color: #fff;
+    margin-top: 80px;
+    position: relative;
+}
+
+.tab {}
+
+.tab ul {}
+
+.tab li {
+    float: left;
+    width: 670px;
+    height: 35px;
+    padding: 15px 0 10px 30px;
+    border-bottom: 1px solid #ddd;
+    _overflow: hidden;
+}
+
+.phone,
+.email {
+    height: 35px;
+    display: block;
+    font: 500 20px/35px microsoft yahei;
+}
+
+.tab li.active {
+    background-color: #f1f1f1;
+    border-bottom: none;
+    position: relative;
+}
+
+.tab li.active .jiantou {
+    width: 349px;
+    height: 8px;
+    position: absolute;
+    bottom: -8px;
+    left: 175px;
+    background: url(https://safeimg.secoo.com/style/reg_bg02.gif) no-repeat;
+}
+
+.tab li.active .jiantou_01 {
+    width: 276px;
+    height: 8px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    background: url(https://safeimg.secoo.com/style/reg_bg03.gif) no-repeat;
+}
+
+.regTips {
+    width: 100%;
+}
+
+.tab_phone {}
+
+.tab_phone ul {}
+
+.tab_phone ul li {}
+
+.t_right {
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    float: left;
+}
+
+.reg_box .reg_in {
+    width: 298px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 5px;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'microsoft yahei';
+    border-radius: 0;
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    -ms-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+
+.reg_box .reg_in:focus {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(240, 127, 5, .4);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(240, 127, 5, .4);
+    -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(240, 127, 5, .4);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(240, 127, 5, .4);
+}
+
+.reg_int {
+    width: 265px;
+}
+
+.reg_box .reg_ins {
+    width: 115px;
+}
+
+.btnStyle01 {
+    margin: 8px 0 0 5px;
+}
+
+.yanz {
+    margin: 5px 0 0 15px;
+    display: inline;
+    text-align: center;
+    line-height: 30px;
+    color: #9a9a9a;
+}
+
+.btn_reg_submit {
+    padding-top: 10px;
+}
+
+.reg_btn {
+    width: 278px;
+    height: 40px;
+    background: url(https://safeimg.secoo.com/style/reg_btn.gif) repeat-x;
+}
+
+.protocol_check {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    color: #999;
+}
+
+.btn_reg_submit p a {
+    color: #999;
+}
+
+.scr_content {
+    width: 278px;
+    height: 105px;
+    border: 1px solid #999;
+    overflow: auto;
+}
+
+.yz {
+    width: 70px;
+    height: 24px;
+    margin: 13px 0 0 10px;
+    display: inline;
+}
+
+.change {
+    height: 20px;
+    line-height: 20px;
+    margin: 15px 0 0 10px;
+    color: #666;
+}
+
+.change:hover {
+    color: #333
+}
+
+.yHover {
+    background: url(https://safeimg.secoo.com/style/reg_bg01.gif) no-repeat;
+}
+
+.error_tips {
+    padding-left: 75px;
+    width: 278px;
+    height: 27px;
+    overflow: hidden;
+}
+
+.regName_tips {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-family: microsoft yahei;
+}
+
+.focus {
+    color: #999;
+}
+
+.blur {
+    color: red;
+    font-weight: bold;
+}
+
+.reg_box .blur_error {
+    border: 1px solid red;
+}
+
+#autoShow {
+    width: 310px;
+    line-height: 22px;
+    border: #EBEBEB solid 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 55;
+    display: none;
+}
+
+.autoshowlist {
+    background-color: #fff;
+}
+
+#autoShow ol li {
+    padding: 0 6px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.tel_show,
+.email_show,
+.again_pass,
+.tel_c,
+.email_c,
+.kapt_show,
+.verify_code_show {
+    display: none;
+}

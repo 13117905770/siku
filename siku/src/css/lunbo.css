@@ -1,0 +1,71 @@
+.lounbo {
+    width: 1000px;
+    height: 450px;
+    position: relative;
+    border: 1px solid orange;
+    margin: 10px auto;
+}
+
+.lounbo ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.lounbo ul li img {
+    width: 1000px;
+    height: 450px;
+}
+
+.lounbo ol {
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    left: 50%;
+    margin-left: -90px;
+    bottom: 20px;
+}
+
+.lounbo ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(218, 214, 18);
+    margin: 0 5px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+
+.lounbo ol li.active {
+    background: rgb(37, 127, 245);
+}
+
+.right i,
+.left i {
+    font-size: 100px;
+    color: #fff;
+    font-family: verdana;
+    position: absolute;
+    text-decoration: none;
+    top: 110px;
+    display: none;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+.right:hover,
+.left:hover {
+    color: rgb(90, 88, 88);
+}
+
+.lounbo ul li.showpic {
+    opacity: 1;
+}
